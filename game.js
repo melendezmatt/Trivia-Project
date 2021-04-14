@@ -56,7 +56,7 @@ let scoreCount = 0;
 checkRepBtn.addEventListener("click", (event) => {
     score.innerHTML = scoreCount;
     if (textArea.value.trim() === answer.innerHTML.trim()) {
-        score.innerHTML += clue.value;
+        score.innerHTML += clue[0].value;
         answer.classList.remove("is-hidden")
         checkRepBtn.classList.add("is-hidden")
     }
