@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="module" link="game.js"> </script>
+    <script type="module" src="game.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.1/build/pure-min.css" integrity="sha384-QkSsJi6SGgWv5LAx1TdvIDRf8TW5Ui4NVKqDDlK1wY2eKioo7wvYIJvGWFQSFE4U" crossorigin="anonymous" />
     <title>Document</title>
 </head>
 <body>
     <main>
         <div id="game-board">
-            <button id="use-promise" class="pure-button"> Use a Promise</button><button id="use-aysnc-await" class="pure-button"> Use async/await </button><button id="use-callback" class="pure-button"> Use a callback</button>
+            <button id="use-promise" class="pure-button"> Use a Promise </button><button id="use-async-await" class="pure-button"> Use async/await </button><button id="use-callback" class="pure-button"> Use a callback</button>
         </div>
         <div id="score"></div>
         <div id="category-title"></div>
@@ -18,8 +18,8 @@
         <form class="pure-form">
             <textarea id="player-response" class="pure-input-1"></textarea>
         </form>
-        <button id="check-response" class="pure-button"> Check Response </button>
-        <div id="answer"></div>
+        <button id="check-response" class="pure-button is-hidden"> Check Response </button>
+        <div id="answer" class="is-hidden"></div>
     </main>
 </body>
 </html>

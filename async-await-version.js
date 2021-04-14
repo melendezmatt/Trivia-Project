@@ -1,5 +1,5 @@
-export default async function getClue() {
-  const answer = await fetch("https://jservice.xyz/api/random-clue");
+export async function getClue() {
+  const answer = await fetch("http://jservice.io/api/random?");
 
   if (!answer.ok) {
     throw new Error(answer.status);

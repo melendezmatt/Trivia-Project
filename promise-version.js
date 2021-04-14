@@ -1,5 +1,5 @@
-export default function getClue () {
-    return fetch("https://jservice.xyz/api/random-clue")
+export function getClue () {
+    return fetch("http://jservice.io/api/random?")
         .then((goodURL) => {
             if (!goodURL.ok) {
                throw new Error(goodURL.status)
